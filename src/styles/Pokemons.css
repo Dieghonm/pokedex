@@ -1,0 +1,13 @@
+.PokemonsColction {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#A71C24
+}
+
+.PokemonCard {
+  min-width: 180px;
+  margin: 20px;
+  border: 5px solid ;
+  background-color:#A68B2D;
+  color: #593C31;
+}

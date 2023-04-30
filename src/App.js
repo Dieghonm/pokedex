@@ -1,12 +1,12 @@
 import './App.css';
-import Main from './Components/Main';
+import Pokemons from './Components/Pokemons';
 import ThemeProvider from './context/ThemeProvider';
 
 function App() {
   return (
     <ThemeProvider >
       <div className="App">
-        <Main />
+        <Pokemons />
       </div>
     </ThemeProvider>
   );

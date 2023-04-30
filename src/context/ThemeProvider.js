@@ -10,7 +10,6 @@ export default function ThemeProvider({ children }) {
     fetch(endpoint? endpoint : ENDPOINT)
       .then(response => response.json())
       .then(response => setPokemons(response))
-      .then(console.log('fetch'))
     ;
   }
 
