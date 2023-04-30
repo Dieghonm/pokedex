@@ -1,11 +1,14 @@
 import './App.css';
 import Main from './Components/Main';
+import ThemeProvider from './context/ThemeProvider';
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <ThemeProvider >
+      <div className="App">
+        <Main />
+      </div>
+    </ThemeProvider>
   );
 }
 
