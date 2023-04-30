@@ -1,4 +1,5 @@
 import './App.css';
+import PokemonStats from './Components/PokemonStats';
 import Pokemons from './Components/Pokemons';
 import ThemeProvider from './context/ThemeProvider';
 
@@ -7,6 +8,7 @@ function App() {
     <ThemeProvider >
       <div className="App">
         <Pokemons />
+        <PokemonStats />
       </div>
     </ThemeProvider>
   );

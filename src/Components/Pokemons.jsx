@@ -26,17 +26,17 @@ function Pokemons() {
   }
   
   return (
-    <div>
-      <h2>PokeDex</h2>
-      {pokemons? 
-        <div className='PokemonsColction'>
-          {criateCard()}
-        </div>
-      : <p>Loading...</p>}
-      {pokemons.previous? <button onClick={() => fetchPokemon(pokemons.previous)}>Pagina anterior</button> : null}
-      <button onClick={() => fetchPokemon(pokemons.next)}>Proxima pagina</button>
-      {console.log(pokemons)}
-    </div>
+    pokemons? 
+      <div>
+        <h2>PokeDex</h2>
+          <div className='PokemonsColction'>
+            {criateCard()}
+          </div>
+        {pokemons.previous? <button onClick={() => fetchPokemon(pokemons.previous)}>Pagina anterior</button> : null}
+        <button onClick={() => fetchPokemon(pokemons.next)}>Proxima pagina</button>
+        {console.log(pokemons)}
+      </div>
+    : <p>Loading...</p>
   );
 }
 
