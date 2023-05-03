@@ -1,0 +1,15 @@
+.pokemonStatsDiv {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.PokemonImg {
+  box-shadow: 0px 0px 25px -5px rgba(45, 47, 48, 0.4);
+  height: 6em;
+  width: 6em;
+
+}
+
+.PokemonImgDiv {
+
+}

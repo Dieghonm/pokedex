@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import ThemeContext from './ThemeContext';
 
-const ENDPOINT = 'https://pokeapi.co/api/v2/pokemon'
 
 export default function ThemeProvider({ children }) {
-  const [pokemons, setPokemons] = useState();
-
+  const [pokemons, setPokemons] = useState({});
+  
   const fetchPokemon = (endpoint) => {
-    fetch(endpoint? endpoint : ENDPOINT)
+    const ENDPOINT = `https://pokeapi.co/api/v2/pokemon/${endpoint}`
+    fetch(ENDPOINT)
       .then(response => response.json())
       .then(response => setPokemons(response))
-    ;
+  }
+
+  const context = { 
+    pokemons,
+    fetchPokemon,
   }
 
   return (
-    <ThemeContext.Provider value={{ pokemons: pokemons, fetchPokemon }}>
+    <ThemeContext.Provider value={context}>
       <div>
         { children }
       </div>
