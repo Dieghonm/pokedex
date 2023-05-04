@@ -1,15 +1,46 @@
 .pokemonStatsDiv {
-  background-color: whitesmoke;
+  background-color: brown;
   color: black;
+}
+
+.PokemonImgDiv {
+  display: flex;
+  justify-content: center;
 }
 
 .PokemonImg {
   box-shadow: 0px 0px 25px -5px rgba(45, 47, 48, 0.4);
+  border-radius: 12px;
   height: 6em;
   width: 6em;
-
+  margin: 1.5em;
+  background-color: aliceblue;
 }
 
-.PokemonImgDiv {
+h4, p{
+  margin: 15px 0px;
+}
 
+.NextDiv, .BeforeDiv {
+  padding: 40px 10px;
+  margin: 50px 0px 50px 20px;
+  background-color: rgb(104, 26, 26);
+  border-radius: 12px;
+  box-shadow: 0px 0px 25px -5px rgba(45, 47, 48, 0.4);
+  cursor: pointer;
+}
+
+.PokemonStats {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 15em 0em 15em;
+  margin: 0px 50px;
+}
+
+.VoltarButton {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1em;
 }
