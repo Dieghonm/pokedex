@@ -1,7 +1,6 @@
 .PokemonsColction {
   display: flex;
   flex-wrap: wrap;
-  background-color:#A71C24
 }
 
 .PokemonCard {
@@ -12,4 +11,39 @@
   background-color:#A68B2D;
   color: #593C31;
   cursor: pointer;
+}
+
+h2 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.NextButton, .BeforeButton {
+  margin: 0px 10px 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.pagesDiv {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 20px;
+}
+
+p {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+h5 {
+  margin: 0px 10px;
+}
+
+span {
+  cursor: pointer;
+}
+
+.CurrentPage {
+  color: blue;
+  text-decoration: underline;
 }

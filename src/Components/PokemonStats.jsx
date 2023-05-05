@@ -37,11 +37,15 @@ function PokemonStats() {
       )});
       return (
         <table>
-          <tr>
-            <th>Status</th>
-            <th>Valor</th>
-          </tr>
-          {data}
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data}
+          </tbody>
         </table>
       )
     }
@@ -60,7 +64,7 @@ function PokemonStats() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <div className="PokemonImgDiv">
           <div className="BeforeDiv">
-            <span onClick={() => nextPokemon(-1)} class="material-symbols-outlined">arrow_back_ios</span>
+            <span onClick={() => nextPokemon(-1)} className="material-symbols-outlined">arrow_back_ios</span>
           </div>
           <img src={sprites.front_default} alt="imagem do pokemon" className="PokemonImg" />
           <div>
@@ -69,7 +73,7 @@ function PokemonStats() {
             <p>Peso - {weight/10}kg</p>
           </div>
           <div className="NextDiv">
-            <span onClick={() => nextPokemon(1)} class="material-symbols-outlined">arrow_forward_ios</span>
+            <span onClick={() => nextPokemon(1)} className="material-symbols-outlined">arrow_forward_ios</span>
           </div>
         </div>
         <div className="PokemonStats">

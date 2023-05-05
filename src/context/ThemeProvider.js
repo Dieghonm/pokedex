@@ -7,6 +7,7 @@ export default function ThemeProvider({ children }) {
   
   const fetchPokemon = (endpoint) => {
     const ENDPOINT = `https://pokeapi.co/api/v2/pokemon/${endpoint}`
+    console.log(ENDPOINT);
     fetch(ENDPOINT)
       .then(response => response.json())
       .then(response => setPokemons(response))
